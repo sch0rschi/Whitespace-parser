@@ -115,14 +115,15 @@ public class PseudoCode {
                 ret += intToBinaryST((int)character);
             }
         } else{
-
             try{
                 number = Integer.parseInt(label);
             } catch(Exception e){
                 messages += "In Line " + lineNumber + " was a Number failure " + "\n";
             }
             ret = intToBinaryST(number);
-            ret = ret.substring(1);
+            while(ret.startsWith("s")) {
+                ret = ret.substring(1);
+            }
         }
 
         return ret + "\n";
