@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="978.0" prefWidth="1177.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhitespaceParser.Controller">
+   <children>
+      <Button fx:id="buttonLeft" layoutX="14.0" layoutY="728.0" mnemonicParsing="false" onAction="#onButtonLeft" text="apply" />
+      <Button fx:id="buttonMiddle" layoutX="400.0" layoutY="728.0" mnemonicParsing="false" onAction="#onButtonMiddle" text="apply" />
+      <Button fx:id="buttonRight" layoutX="786.0" layoutY="728.0" mnemonicParsing="false" onAction="#onButtonRight" text="apply" />
+      <TextArea fx:id="codeLeft" layoutX="14.0" layoutY="14.0" prefHeight="703.0" prefWidth="375.0" />
+      <TextArea fx:id="codeMiddle" layoutX="401.0" layoutY="14.0" prefHeight="703.0" prefWidth="375.0" />
+      <TextArea fx:id="codeRight" layoutX="786.0" layoutY="14.0" prefHeight="703.0" prefWidth="375.0" />
+      <Label layoutX="169.0" layoutY="732.0" text="Pseudocode" />
+      <Label layoutX="565.0" layoutY="732.0" text="STLCode" />
+      <Label layoutX="943.0" layoutY="732.0" text="Whitespace" />
+      <TextArea fx:id="console" layoutX="14.0" layoutY="765.0" prefHeight="200.0" prefWidth="1147.0" />
+   </children>
+</AnchorPane>
